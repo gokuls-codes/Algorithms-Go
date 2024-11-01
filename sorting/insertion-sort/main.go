@@ -21,7 +21,7 @@ func insertionSort(arr []int) []int {
 
 func main() {
 	var slice []int
-	for _=range(100) {
+	for range 100 {
 		slice = append(slice, rand.IntN(1000))
 	}
 	
@@ -30,7 +30,6 @@ func main() {
 	for _, v := range(slice) {
 		fmt.Printf("%d, ", v)
 	}
-	fmt.Print("Before sorting\n")
 
 	slice = insertionSort(slice)
 
